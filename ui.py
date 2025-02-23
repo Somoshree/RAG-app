@@ -77,7 +77,7 @@ elif choice == "📤 Upload PDFs":
     st.markdown("---")
     uploaded_file = st.file_uploader("Upload a PDF", type=["pdf"])
     if uploaded_file is not None:
-        st.success("📄 File Uploaded Successfully!")
+        st.success("📄 File Uploaded Successfully! Please wait for the embeddings to be created...")
         # Display file name and size
         st.markdown(f"**Filename:** {uploaded_file.name}")
         st.markdown(f"**File Size:** {uploaded_file.size} bytes")

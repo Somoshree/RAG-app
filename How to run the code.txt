@@ -8,3 +8,12 @@ In 1st terminal: streamlit run ui.py
 In 2nd terminal: docker run -p 6333:6333 -v .:/qdrant/storage qdrant/qdrant
 
 In 3rd terminal: ollama run llama3.2:3b
+
+
+To expose your streamlit app port to the outside world, run the following in another terminal:
+
+ngrok http http://localhost:8501
+
+
+
+
